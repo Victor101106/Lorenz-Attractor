@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+    place-items: center;
+    display: grid;
+    height: 100vh;
+    height: 100svh;
+    width: 100vw;
+    width: 100svw;
+}
+
+canvas {
+    position: absolute;
+    aspect-ratio: 1/1;
+}
+
+@media (orientation: landscape) {
+    canvas {
+        height: 90%;
+    }
+}
+
+@media (orientation: portrait) {
+    canvas {
+        width: 90%;
+    }
+}
